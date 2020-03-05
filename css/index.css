@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
+section{
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+header{
+  text-align: center;
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid gray;
+}
+.social_icon{
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.mainContainer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.navbar{
+  background-color: #383636;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar > .menu {
+  display: none;
+}
+
+.hamburger{
+  color: white;
+}
+
+@media(min-width: 600px){
+
+  header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .logo{
+    width: 40%;
+  }
+
+
+}
+@media (min-width: 991px){
+  .mainContainer{
+    flex-direction: row;
+  }
+
+  .product{
+    width: 33%;
+  }
+  .navbar > .menu{
+    display: block;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+  }
+  .hamburger{
+    display: none;
+  }
+
+  li{
+    padding: 15px;
+  }
+
+}
